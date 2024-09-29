@@ -2,6 +2,7 @@ baseURL = 'https://mhaneman.github.io/aviary/'
 languageCode = 'en-us'
 title = 'The Aviary'
 theme='retro'
+canonifyURLs = true
 
 [[menus.main]]
 name = 'Gallery'
