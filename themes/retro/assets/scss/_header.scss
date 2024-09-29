@@ -1,0 +1,35 @@
+@import "variables";
+
+header {
+  margin: auto;
+  padding: 1em;
+  width: 55%;
+  min-width: 746px;
+  color: $accent;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+
+  li {
+    list-style-type: none;
+    vertical-align: middle;
+    float: left;
+    padding: 10px;
+    margin: 1em;
+    background-color: $accent;
+    border-radius: $border-radius;
+  }
+
+  li:hover {
+    background-color: white;
+  }
+}
+
+@media (max-width: $breakpoint-tablet) {
+  header {
+    width: 100%;
+    min-width: none;
+    border-radius: $border-radius;
+    border: $border;
+  }
+}

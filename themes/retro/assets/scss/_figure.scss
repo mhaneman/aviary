@@ -1,0 +1,13 @@
+figure {
+  margin: auto;
+
+  img {
+    margin: auto;
+    max-width: 100%;
+    border: 1px solid $accent;
+  }
+
+  figcaption {
+    text-align: left;
+  }
+}

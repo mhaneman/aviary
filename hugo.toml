@@ -1,0 +1,19 @@
+baseURL = 'https://example.org/'
+languageCode = 'en-us'
+title = 'The Aviary'
+theme='retro'
+
+[[menus.main]]
+name = 'Gallery'
+pageRef = '/gallery'
+weight = 10
+
+[[menus.main]]
+name = 'Blog'
+pageRef = '/blog'
+weight = 20
+
+[[socials.main]]
+name = 'twitter'
+url = ''
+icon = ''

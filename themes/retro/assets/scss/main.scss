@@ -1,0 +1,75 @@
+@import "fonts";
+@import "variables";
+
+@import "header";
+@import "footer";
+
+@import "table";
+@import "figure";
+@import "post";
+
+* {
+  box-sizing: border-box;
+}
+
+body {
+  margin: 0;
+  font-family: "Fira Code", Arial, Helvetica, sans-serif;
+  color: white;
+
+  background-image: url("../images/bg.jpg");
+  background-position: top;
+  background-repeat: repeat;
+  background-size: cover;
+  background-size: 100% 100vh;
+}
+
+main {
+  background-color: $bg-dark;
+  margin: auto;
+  width: 55%;
+  min-width: 746px;
+  padding: 2em;
+  border-radius: $border-radius;
+  border: $border;
+}
+
+@media (max-width: $breakpoint-tablet) {
+  body {
+    background-color: $bg-dark;
+    background-image: none;
+  }
+  main {
+    width: 100%;
+    min-width: none;
+    border: none;
+  }
+}
+
+a {
+  text-decoration: none;
+  color: white;
+}
+
+a:hover {
+  color: $accent;
+}
+
+.social {
+  background-color: $accent;
+  border-radius: $border-radius;
+  padding: 10px;
+  margin: 10px;
+
+  // display: flex;
+
+  // .social-icon {
+  //   justify-content: center;
+  //   fill: white;
+  //   margin-left: 10px;
+  // }
+}
+
+.social:hover {
+  background-color: white;
+}

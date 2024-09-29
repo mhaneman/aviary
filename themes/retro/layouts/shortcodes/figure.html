@@ -1,0 +1,5 @@
+{{ if .Get "src" }}
+  <figure>
+    <img src="{{ .Get "src" | safeURL }}" />
+  </figure>
+{{ end }}

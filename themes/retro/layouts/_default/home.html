@@ -1,0 +1,31 @@
+{{ define "main" }}
+  {{ .Content }}
+ 
+  {{ range .Paginator.Pages }}
+    <article class="post">
+      <h2>
+        <a href="{{ .Permalink }}">{{ .Title | markdownify }}</a>
+      </h2>
+
+      <div class="post-meta">
+        {{- if .Date -}}
+          <time>
+            {{- .Date.Format "2006-01-02" -}}
+          </time>
+        {{- end -}}
+        {{- with .Params.Author -}}
+          <span>{{- . -}}</span>
+        {{- end -}}
+      </div>
+
+      <div class="post-content">
+        <p>{{ .Description | markdownify }}</p>
+      </div>
+
+      <a class="read-more" href="{{ .RelPermalink }}"> Read More </a>
+     
+     
+    </article>
+  {{ end }}
+
+{{ end }}
